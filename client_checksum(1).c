@@ -19,7 +19,7 @@ printf("socket creation failed...\n");
 exit(0);
 }
 else
-printf("Socket successfully created..\n");
+printf("Socket successfully created.....\n");
 
 bzero(&serv_addr, sizeof(serv_addr));
 serv_addr.sin_family=AF_INET;
@@ -28,7 +28,7 @@ serv_addr.sin_port=htons(SERV_TCP_PORT);
 
 if (connect(sockfd, (SA*)&serv_addr, sizeof(serv_addr)) != 0)
 {
-printf("connection with the server failed...\n");
+printf("connection with the server failed......\n");
 exit(0);
 }
 else
